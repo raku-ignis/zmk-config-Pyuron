@@ -63,19 +63,19 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp L  &kp U      &kp COMMA     &kp PERIOD     &kp F               &kp W                 &kp R        &kp Y            &kp P
-&kp E  &kp I  &kp A      &kp O         &kp MINUS      &kp K               &kp T                 &kp N        &kp S            &kp H
-&kp Z  &kp X  &kp C      &kp V         &kp SEMICOLON  &kp LS(CAPS)        &mt RIGHT_ALT DELETE  &kp G        &kp D            &kp M
-&kp J  &kp B  &kp LCTRL  &kp LEFT_WIN  &lt 1 SPACE    &mt LEFT_SHIFT TAB  &lt 3 BACKSPACE       &lt 2 ENTER  &lt 4 RIGHT_ALT  &kp LS(RIGHT_CONTROL)
+&kp Q  &kp L  &kp U      &kp COMMA     &kp PERIOD     &kp F               &kp W            &kp R        &kp Y            &kp P
+&kp E  &kp I  &kp A      &kp O         &kp MINUS      &kp K               &kp T            &kp N        &kp S            &kp H
+&kp Z  &kp X  &kp C      &kp V         &kp SEMICOLON  &kp LS(CAPS)        &kp DELETE       &kp G        &kp D            &kp M
+&kp J  &kp B  &kp LCTRL  &kp LEFT_WIN  &lt 1 SPACE    &mt LEFT_SHIFT TAB  &lt 3 BACKSPACE  &lt 2 ENTER  &lt 4 RIGHT_ALT  &kp LS(RIGHT_CONTROL)
             >;
         };
 
         layer_1 {
             bindings = <
-&kp PLUS       &kp MINUS         &kp ASTRK      &kp SLASH     &kp EQUAL  &kp GRAVE         &arrow          &doble_arrow       &kp SLASH             &kp BACKSLASH
-&kp AT         &kp HASH          &kp DOLLAR     &kp EXCL      &kp TILDE  &kp SINGLE_QUOTE  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp PERCENT    &kp PIPE          &kp AMPERSAND  &kp QUESTION  &kp CARET  &trans            &trans          &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp LESS_THAN  &kp GREATER_THAN  &trans         &trans        &trans     &trans            &trans          &trans             &trans                &trans
+&kp PLUS       &kp MINUS         &kp ASTRK      &kp SLASH     &kp EQUAL  &kp GRAVE         &arrow            &doble_arrow       &kp SLASH             &kp BACKSLASH
+&kp AT         &kp HASH          &kp DOLLAR     &kp EXCL      &kp TILDE  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp PERCENT    &kp PIPE          &kp AMPERSAND  &kp QUESTION  &kp CARET  &trans            &trans            &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp LESS_THAN  &kp GREATER_THAN  &trans         &trans        &trans     &trans            &trans            &trans             &trans                &trans
             >;
         };
 
@@ -90,10 +90,10 @@
 
         layer_3 {
             bindings = <
-&trans           &trans        &trans   &trans          &trans  &kp ESC      &kp HOME  &kp UP_ARROW    &kp END            &kp PRINTSCREEN
-&trans           &kp LEFT_ALT  &kp TAB  &kp LA(ESCAPE)  &trans  &trans       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT          &trans
-&trans           &trans        &trans   &trans          &trans  &trans       &trans    &trans          &kp C_VOLUME_DOWN  &kp C_MUTE
-&kp C_VOLUME_UP  &trans        &trans   &trans          &trans  &kp LS(TAB)  &trans    &trans          &trans             &trans
+&trans           &trans          &trans        &trans   &trans  &kp ESC      &kp HOME  &kp UP_ARROW    &kp END            &kp PRINTSCREEN
+&trans           &kp LA(ESCAPE)  &kp LEFT_ALT  &kp TAB  &trans  &trans       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT          &trans
+&trans           &trans          &trans        &trans   &trans  &trans       &trans    &trans          &kp C_VOLUME_DOWN  &kp C_MUTE
+&kp C_VOLUME_UP  &trans          &trans        &trans   &trans  &kp LS(TAB)  &trans    &trans          &trans             &trans
             >;
         };
 
@@ -117,10 +117,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans     &trans        &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &mkp MB1      &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LC(W)  &kp LA(LEFT)  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans        &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans     &trans  &trans    &trans              &trans    &trans
+&trans  &trans  &trans  &trans  &trans     &trans  &mkp MB1  &mkp MB3            &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans     &trans  &trans    &trans              &trans    &trans
+&trans  &trans  &trans  &trans  &kp LC(W)  &trans  &trans    &kp LA(LEFT_ARROW)  &trans    &trans
             >;
         };
     };
